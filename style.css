@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sansserif;
+    color: hsl(228, 12%, 48%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    overflow: hidden;
+    border-radius: 1rem;
+    max-width: 550px;
+    max-height: 420px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#img-content {
+    max-width: 100%;
+    max-height: 420px;
+    background-image: url('images/image-product-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#img-content img {
+    max-height: 420px;
+}
+
+#container h3 {
+    font-size: 0.7rem;
+    letter-spacing: 0.3rem;
+}
+
+#container h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: #000;
+}
+
+#content {
+    max-height: 420px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+}
+
+#price-box {
+    display: flex;
+    
+}
+
+
+#disc_price {
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    padding-right: 1rem;
+}
+
+#orginal_price {
+    align-self: center;
+    text-decoration:line-through;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: hsl(158, 36%, 37%);
+    margin-top: 1rem;
+    padding: 0.8rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0%;
+}
+
+
+@media only screen and (max-width: 438px) {
+    #container {
+        max-width: 95%;
+        min-height: 80vh;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 55%;
+    }
+
+    #img-content {
+        min-width: 100%;
+        min-height: 100%;
+        background-position: 0 50%;
+    }
+
+    #img-content img {
+        width: 100%;
+    }
+
+    #content {
+        overflow: hidden;
+        font-size: 0.5em;
+        font-size: 1rem;
+    }
+
+    #container h3 {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        font-weight: 500;
+    }
+
+    button {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+}
