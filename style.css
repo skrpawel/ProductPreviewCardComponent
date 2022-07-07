@@ -6,14 +6,15 @@
 
 html {
     font-size: 14px;
-    
+    height: 100vh;
 }
 
 body {
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sansserif;
     color: hsl(228, 12%, 48%);
-    height: 100vh;
+    min-height: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,6 +22,7 @@ body {
 }
 
 #container {
+    margin: 2rem;
     overflow: hidden;
     border-radius: 1rem;
     max-width: 550px;
@@ -92,11 +94,12 @@ button {
 
 .attribution {
     position: absolute;
+    padding: 1em;
     bottom: 0%;
 }
 
 
-@media only screen and (max-width: 438px) {
+@media only screen and (max-width: 485px) {
     #container {
         max-width: 95%;
         min-height: 80vh;
